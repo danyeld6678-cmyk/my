@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uma surpresa para você ❤️</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Corações animados -->
+    <div id="coracoes"></div>
+
+    <!-- Música -->
+    <audio id="musica" loop>
+        <source src="this i love.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- TELA DE ABERTURA -->
+    <section id="inicio" class="tela ativa">
+
+        <div class="conteudo">
+            <div class="icone">💌</div>
+
+            <p class="subtitulo">Preparei algo para você...</p>
+
+            <h1>
+                Oi, <span class="nome">NOME DELA</span> ❤️
+            </h1>
+
+            <p class="descricao">
+                Tem uma coisa que eu quero te dizer
+                há algum tempo.
+            </p>
+
+            <button id="abrirCarta" class="botao">
+                Abrir minha cartinha 💌
+            </button>
+
+            <button id="botaoMusica" class="botao-musica">
+                ♫ Tocar nossa música
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- TELA DA CARTA -->
+    <section id="carta" class="tela">
+
+        <div class="papel">
+
+            <div class="selo">❤️</div>
+
+            <p class="saudacao">
+                Para você, com carinho...
+            </p>
+
+            <h2>Uma coisa que preciso te dizer</h2>
+
+            <div class="texto-carta">
+                <p>
+                    Eu pensei bastante antes de te falar isso,
+                    mas acho que não preciso complicar.
+                </p>
+
+                <p>
+                    Eu gosto de você. Gosto da nossa conexão,
+                    das nossas conversas e de ter você por perto.
+                </p>
+
+                <p>
+                    Cada momento com você se torna especial,
+                    e eu gostaria de viver ainda mais momentos
+                    ao seu lado.
+                </p>
+
+                <p>
+                    Por isso, quero te fazer uma pergunta...
+                </p>
+            </div>
+
+            <h2 class="pergunta">
+                Quer namorar comigo? ❤️
+            </h2>
+
+            <div class="botoes">
+                <button id="botaoSim" class="botao sim">
+                    SIM! ❤️
+                </button>
+
+                <button id="botaoAgoraNao" class="botao secundario">
+                    Preciso pensar
+                </button>
+            </div>
+
+            <p id="mensagemResposta"></p>
+
+            <p class="assinatura">
+                Com carinho, Danyel ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TELA DEPOIS DO SIM -->
+    <section id="final" class="tela">
+
+        <div class="conteudo final-conteudo">
+
+            <div class="grande-coracao">💖</div>
+
+            <p class="subtitulo">Um novo capítulo começa...</p>
+
+            <h1>Ela disse SIM!</h1>
+
+            <p class="descricao">
+                Você não imagina o quanto isso significa
+                para mim.
+            </p>
+
+            <div class="cartao-final">
+                <p>
+                    Que essa seja a primeira de muitas
+                    lembranças bonitas que vamos construir.
+                </p>
+
+                <p>
+                    Obrigado por aceitar viver isso comigo. ❤️
+                </p>
+            </div>
+
+            <p class="frase-final">
+                Eu escolho você. Hoje e todos os dias.
+            </p>
+
+            <button id="botaoSurpresa" class="botao">
+                Tem mais uma surpresa... ✨
+            </button>
+
+            <div id="surpresa" class="surpresa escondida">
+                <div class="icone">💝</div>
+
+                <h2>Uma última coisinha...</h2>
+
+                <p>
+                    Se eu pudesse escolher novamente,
+                    entre todas as pessoas do mundo,
+                    ainda escolheria conhecer você.
+                </p>
+
+                <p>
+                    E essa é só a primeira página
+                    da nossa história. ❤️
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SURPRESA ESCONDIDA -->
+    <button
+        id="estrelinha"
+        class="estrelinha"
+        aria-label="Surpresa secreta"
+        title="Clique aqui"
+    >✦</button>
+
+    <div id="surpresaSecreta" class="modal escondida">
+        <div class="modal-conteudo">
+            <button id="fecharSurpresa" class="fechar">
+                ×
+            </button>
+
+            <div class="icone">🌙</div>
+
+            <h2>Você encontrou o segredo!</h2>
+
+            <p>
+                Entre tantas coisas bonitas neste mundo,
+                uma das minhas favoritas é poder
+                compartilhar momentos com você.
+            </p>
+
+            <p>Guarde este cantinho como nosso. ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
